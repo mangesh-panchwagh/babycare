@@ -105,7 +105,8 @@ body{
 .row-container{
   display: flex;
   justify-content: flex-start;
-  gap: 360px;
+  gap: 40px;
+  flex-wrap: wrap;
   padding: 10px;
 }
 
@@ -149,7 +150,7 @@ align-content:end;
   text-align: center;
   color: white;
   position: absolute;
-  height: 200px; width: 1500px; border: 1px solid black;
+  min-height: 200px; width: 100%; border: 1px solid black;
 }
 
 .about-content{
@@ -326,7 +327,7 @@ align-content:end;
 .babysitter-grid {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -522,3 +523,33 @@ margin-bottom: 30px;
   min-width: 300px;
 }
 
+
+
+/* RESPONSIVE DESIGN */
+*{box-sizing:border-box;}
+img{max-width:100%;height:auto;}
+
+@media screen and (max-width:768px){
+.navbar,.top-bar,.row-container,.welcome,.babylove{
+flex-direction:column !important;
+}
+
+.nav-links{
+flex-direction:column;
+gap:10px;
+padding:0;
+}
+
+.row-container{gap:20px;text-align:center;}
+.top-bar{text-align:center;}
+.about-section{position:relative;padding:30px 15px;}
+.about-content h1{font-size:32px;}
+.services-section h2{margin-top:40px;}
+.about-card,.service-card,.card{width:100%;}
+.welcome,.babylove{padding:20px;}
+.learnmore,.babylove-left,.babylove-right{max-width:100%;width:100%;}
+.heading,.paragraph,.list,.button-wrapper{text-align:center;}
+.welcomeImage{width:100%;height:auto;}
+.babylove-right{grid-template-columns:1fr;}
+.babysitter-grid{grid-template-columns:1fr;}
+}
