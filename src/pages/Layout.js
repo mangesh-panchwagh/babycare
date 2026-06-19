@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaSearch, FaFacebookF, FaTimes, FaInstagram, FaTwitter  } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaSearch, FaFacebookF, FaInstagram } from "react-icons/fa";
 import {FaXTwitter } from "react-icons/fa6";
 
 
@@ -257,7 +257,7 @@ const Layout = () => {
                               </div>
                         </div>
                         <div className="imagecontainer">
-                              <img src="https://images.unsplash.com/photo-1504151932400-72d4384f04b3" className="welcomeImage"
+                              <img src="https://images.unsplash.com/photo-1504151932400-72d4384f04b3" alt="Welcome to Babysitting Agency" className="welcomeImage"
                               />
                         </div>
                   </div>
